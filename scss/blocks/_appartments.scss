@@ -1,0 +1,16 @@
+.appartaments {
+  position: relative;
+  &::after {
+    content: "III";
+    @include decorNumbers;
+    right: calc(50% + 555px);
+    position: absolute;
+    transform: translateX(50%);
+  }
+}
+.appartaments__title {
+  margin-bottom: 88px;
+  @include mediaTablet {
+    margin-bottom: 40px;
+  }
+}

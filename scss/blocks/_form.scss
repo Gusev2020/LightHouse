@@ -1,0 +1,45 @@
+.form__input {
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba($white, 0.2);
+  border: none;
+  color: $white;
+  transition: background-color 0.3s linear;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 27px;
+    font-family: $font-main;
+    color: #bebebe;
+  }
+  &:focus {
+    background-color: rgba($white, 0.3);
+  }
+}
+.form__private {
+  font-size: 13px;
+  line-height: 16px;
+  color: #e7e7e7;
+  text-align: center;
+  &--bottom {
+    @include mediaTablet {
+      grid-row: 4/5;
+    }
+  }
+}
+.form__btn {
+  height: 50px;
+  color: $white;
+  background-color: $accent;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.3s linear;
+
+  &:hover {
+    background-color: saturate($accent, 15%);
+  }
+}
